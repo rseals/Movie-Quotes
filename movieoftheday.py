@@ -5,8 +5,15 @@ movies = ['Star Wars 4,5 or 6','King Pin','Good Fellas','Casino','Tombstone','Bi
 
 numberofmovies = len(movies)
 
-print ("Number of movies in the database: " + str(numberofmovies))
-print ("<br>")
 secure_random = random.SystemRandom()
-print("Your movie quote challenge is: " + secure_random.choice(movies))
 
+movieoftheday = secure_random.choice(movies)
+
+def web_print_movie():
+    #print ("Number of movies in the database: " + str(numberofmovies))
+    #print ("<br>")
+    print("Your movie quote challenge is: " + movieoftheday)
+
+web_print_movie()
+
+print (movieoftheday)
