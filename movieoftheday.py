@@ -20,18 +20,8 @@ def databasequery():
 
     # movie_quotes = c.fetchall()
 
-#def web_print_movie():
-    #print ("Number of movies in the database: " + str(numberofmovies))
-    #print ("<br>")
- #   print("Your movie quote challenge is: " + movieoftheday)
-
-#web_print_movie()
-
-#print (movieoftheday)
  
 movie_of_the_day = databasequery()
 
 print ('Movie of the day is:', movie_of_the_day)
 print ('')
-
-# print (movie_quotes)
