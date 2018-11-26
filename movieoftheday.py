@@ -22,9 +22,24 @@ def databasequery():
 
     movie_quotes = c.fetchall()
 
+def UserInterface():
+    win = GraphWin('Movie of the Day Picker', 320, 240)
+    win.setBackground('Blue')
+    #rec = Rectangle(Point(245,200), Point(255,75))
+    #rec.setFill('brown')
+    #rec.draw(win)
+    #label = Text(center, "Tree")
+    #label.draw(win)
+    finishbuttontext = Text(Point(160,120), movie_of_the_day)
+    finishbuttontext.setSize(20)
+    finishbuttontext.setStyle("bold")
+    finishbuttontext.setTextColor("white")
+    finishbuttontext.draw(win)
  
 movie_of_the_day = databasequery()
 # movie_of_the_day_quote = 
 
+UserInterface()
+
 print ('Movie of the day is:', movie_of_the_day)
-print ('')
+print ()
