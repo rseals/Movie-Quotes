@@ -30,16 +30,14 @@ def UserInterface():
     #rec.draw(win)
     #label = Text(center, "Tree")
     #label.draw(win)
-    finishbuttontext = Text(Point(160,120), movie_of_the_day)
-    finishbuttontext.setSize(20)
-    finishbuttontext.setStyle("bold")
-    finishbuttontext.setTextColor("white")
-    finishbuttontext.draw(win)
+    MOTDAnnoucement = Text(Point(160,120), movie_of_the_day)
+    MOTDAnnoucement.setSize(20)
+    MOTDAnnoucement.setStyle("bold")
+    MOTDAnnoucement.setTextColor("white")
+    MOTDAnnoucement.draw(win)
  
 movie_of_the_day = databasequery()
-# movie_of_the_day_quote = 
-
 UserInterface()
 
-print ('Movie of the day is:', movie_of_the_day)
-print ()
+# print ('Movie of the day is:', movie_of_the_day)
+# print ()
