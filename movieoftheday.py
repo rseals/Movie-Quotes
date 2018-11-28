@@ -25,19 +25,14 @@ def databasequery():
 def UserInterface():
     win = GraphWin('Movie of the Day Picker', 320, 240)
     win.setBackground('Blue')
-    #rec = Rectangle(Point(245,200), Point(255,75))
-    #rec.setFill('brown')
-    #rec.draw(win)
-    #label = Text(center, "Tree")
-    #label.draw(win)
     MOTDAnnoucement = Text(Point(160,120), movie_of_the_day)
     MOTDAnnoucement.setSize(20)
     MOTDAnnoucement.setStyle("bold")
     MOTDAnnoucement.setTextColor("white")
     MOTDAnnoucement.draw(win)
- 
+
+
 movie_of_the_day = databasequery()
 UserInterface()
-
 # print ('Movie of the day is:', movie_of_the_day)
 # print ()
